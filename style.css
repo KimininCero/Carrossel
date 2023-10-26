@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(Fontes/RetroCool-Regular.otf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(Fontes/Bonello-Regular.otf);
+}
+
+h1 {
+    font-family: font1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://a-static.mlcdn.com.br/450x450/painel-de-lona-circo-roda-gigante-e-montanha-russa-fundo-azul-brilhante-fabrika-de-festa/fabrikadefesta/560409646/61592eca0fa12f5cd3941d6d570704cd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    background-color: #ffffff80;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.bar:hover{
+    background: #838174;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~  .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~  .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~  .img1{
+    margin-left: -83.3333333333%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: font2;
+}
+
